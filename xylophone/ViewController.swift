@@ -11,16 +11,20 @@ import AVFoundation
 class ViewController: UIViewController {
 
     var  player: AVAudioPlayer?
+//    let gradientLayer = CAGradientLayer()
+//   gradientLayer.frame = view.bounds
+//    gradientLayer.colors = [UIColor.systemGreen.cgColor
+//    ,UIColor.systemPink.cgColor]
+//    view.layer.addSublayer(gradientLayer)
+//
+    
     override func viewDidLoad() {
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
       
 //
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        gradientLayer.colors = [UIColor.systemGreen.cgColor
-//        ,UIColor.systemPink.cgColor]
-//        view.layer.addSublayer(gradientLayer)
+     
        
     }
     @IBAction func keypressed(_ sender: UIButton) {
@@ -29,7 +33,7 @@ class ViewController: UIViewController {
       //  print ("keypressed")
        
          playSound(keyName: sender.currentTitle)
-        print(sender.currentTitle)
+     
         
       
     }
